@@ -6,16 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  // "repository": {
-  //   "type": "git",
-  //   "url": "git+https://github.com/mor10/humescores"
-  // },
-  // "author": "Morten Rand-Hendriksen",
-  // "license": "GPL-3.0",
-  // "bugs": {
-  //   "url": "https://github.com/mor10/humescores/issues"
-  // },
-  // "homepage": "https://github.com/mor10/humescores#readme",
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmirHosseinifar/Wordpress-Practice"
+  },
+  "author": "Amir Hosseinifar",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/AmirHosseinifar/Wordpress-Practice"
+  },
+  "homepage": "https://github.com/AmirHosseinifar/Wordpress-Practice",
   "devDependencies": {
     "autoprefixer": "^6.5.2",
     "browser-sync": "^2.17.6",
