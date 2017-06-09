@@ -1,3 +1,11 @@
+.header-image {
+	max-height: 60vh;
+	img {
+		display: block;
+		width: 100vw;
+	}
+}
+
 
 .site-header {
 	position: relative;
@@ -13,8 +21,25 @@
 
 .site-branding {
 	min-height: 65px;
+	display: flex;
+	
 }
 
+.custom-logo-link {
+	margin-right: 1em;
+	img {
+			display: block;
+			height: 65px;
+			width: auto;
+	}
+}
+
+.site-branding-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 65px;
+}
 .site-title {
 	margin: 0;
 	padding: 0;
@@ -44,10 +69,12 @@
 	.site-header {
 		display: flex;
 		justify-content: space-between;
+		// flex-wrap: wrap;
 	}
 
 	.site-branding {
 		width: 35%;
+		 flex: 1 0 auto;
 	}
 	.site-navigation {
 		width: 55%;

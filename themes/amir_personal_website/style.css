@@ -426,7 +426,7 @@ img {
 }
 
 figure {
-	margin: 1em 0;
+	margin: 0;
 	/* Extra wide images within figure tags don't overflow the content area. */
 }
 
@@ -706,8 +706,6 @@ a:hover, a:active {
 .entry-content:after,
 .comment-content:before,
 .comment-content:after,
-.site-header:before,
-.site-header:after,
 .site-content:before,
 .site-content:after,
 .site-footer:before,
@@ -720,7 +718,6 @@ a:hover, a:active {
 .clear:after,
 .entry-content:after,
 .comment-content:after,
-.site-header:after,
 .site-content:after,
 .site-footer:after {
 	clear: both;
@@ -745,12 +742,21 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Header 
 --------------------------------------------------------------*/
+.header-image {
+	max-height: 60vh;
+}
+
+.header-image img {
+	display: block;
+	width: 100vw;
+}
+
 .site-header {
 	position: relative;
 	padding: 1em;
 	font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
 	color: #fff;
-	background-color: #002254;
+	background-color: #191919;
 }
 
 @media screen and (min-width: 600px) {
@@ -761,6 +767,33 @@ a:hover, a:active {
 
 .site-branding {
 	min-height: 65px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.custom-logo-link {
+	margin-right: 1em;
+}
+
+.custom-logo-link img {
+	display: block;
+	height: 65px;
+	width: auto;
+}
+
+.site-branding-text {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	height: 65px;
 }
 
 .site-title {
@@ -798,6 +831,9 @@ a:hover, a:active {
 	}
 	.site-branding {
 		width: 35%;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 0 auto;
+		        flex: 1 0 auto;
 	}
 	.site-navigation {
 		width: 55%;

@@ -19,9 +19,9 @@
 function amirpersonal_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'amirpersonal_custom_header_args', array(
 		'default-image'          => '',
-		'default-text-color'     => '000000',
-		'width'                  => 1000,
-		'height'                 => 250,
+		'default-text-color'     => 'ffffff',
+		'width'                  => 3457,
+		'height'                 => 1135,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'amirpersonal_header_style',
 	) ) );
