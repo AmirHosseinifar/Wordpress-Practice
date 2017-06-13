@@ -49,7 +49,7 @@ function amirpersonal_posted_on() {
 			esc_html__( 'Edit %s', 'amirpersonal' ),
 			the_title( '<span class="screen-reader-text">"', '"</span>', false )
 		),
-		' <span class="edit-link">',
+		'<span class="edit-link">',
 		'</span>'
 	);
 }
@@ -125,3 +125,18 @@ function amirpersonal_category_transient_flusher() {
 }
 add_action( 'edit_category', 'amirpersonal_category_transient_flusher' );
 add_action( 'save_post',     'amirpersonal_category_transient_flusher' );
+
+/**
+* Post navigation (previous / next post) for single posts
+*/
+function amirpersonal_post_navigation() {
+	the_post_navigation( array(
+		'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'humescores' ) . '</span> ' .
+			'<span class="screen-reader-text">' . __( 'Next post:', 'humescores' ) . '</span> ' .
+			'<span class="post-title">%title</span>',
+		'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'humescores' ) . '</span> ' .
+			'<span class="screen-reader-text">' . __( 'Previous post:', 'humescores' ) . '</span> ' .
+			'<span class="post-title">%title</span>',
+	) );
+
+}
