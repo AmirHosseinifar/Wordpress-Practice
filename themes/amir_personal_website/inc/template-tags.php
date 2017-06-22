@@ -140,3 +140,21 @@ function amirpersonal_post_navigation() {
 	) );
 
 }
+
+/** 
+* customize ellipsis at end of excerpts. 
+*/
+
+function amirpersonal_excerpt_more( $more ) {
+	return "...";
+}
+add_filter( 'excerpt_more', 'amirpersonal_excerpt_more' );
+
+/** 
+* Filter excerpt length to 100 words.
+*/
+
+function amirpersonal_excerpt_length( $length ) {
+	return 100;
+}
+add_filter( 'excerpt_length', 'amirpersonal_excerpt_length');
