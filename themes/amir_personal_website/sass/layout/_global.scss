@@ -12,8 +12,8 @@
 }
 
 @media screen and (min-width: $query__medium) {
-  .single {
-    &.has-sidebar {
+  .single.has-sidebar,
+  .page {
 
       .hentry {
         display: flex;
@@ -36,7 +36,19 @@
 
     }
   }
-}
+
+  .page {
+    &.has-page-sidebar {
+      .hentry {
+        flex-direction: row-reverse;
+      }
+    }
+    &:not(.has-page-sidebar) {
+      .hentry {
+        justify-content: flex-end;
+      }
+    }
+  }
 @media screen and (min-width: $query__medium) {
   .single {
     &.no-sidebar {
