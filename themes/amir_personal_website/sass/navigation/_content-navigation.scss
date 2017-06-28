@@ -123,4 +123,16 @@
 		font-weight: 600;
 		color: black;
 	}
+
+	.prev .icon {
+		margin-right: 0.5em;
+		height: .7em;
+		width: .7em;
+	}
+
+	.next .icon {
+		margin-left: .5em;
+		height: .7em;
+		width: .7em;
+	}
 }

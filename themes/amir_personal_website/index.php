@@ -42,9 +42,9 @@ get_header(); ?>
 			endwhile;
 
 			the_posts_pagination( array(
-				'prev_text' =>__( 'Newer', 'amirpersonal'),
-				'next_text' =>__( 'Older', 'amirpersonal'),
-				'before_page_number' => '<span class="screen-reader-text">' . __('page ', 'humescores' ) . '</span>',
+				'prev_text' => amirpersonal_get_svg( array( 'icon' => 'arrow-left' ) ) . __( 'Newer', 'amirpersonal' ),
+				'next_text' => __( 'Older', 'amirpersonal' ) . amirpersonal_get_svg( array( 'icon' => 'arrow-right' ) ),
+				'before_page_number' => '<span class="screen-reader-text">' . __( 'Page ', 'amirpersonal' ) . '</span>',
 			));
 
 		?>

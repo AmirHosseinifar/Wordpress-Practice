@@ -30,7 +30,7 @@ else :
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			
+
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
@@ -47,7 +47,7 @@ else :
 			the_posts_pagination( array(
 				'prev_text' =>__( 'Newer', 'amirpersonal'),
 				'next_text' =>__( 'Older', 'amirpersonal'),
-				'before_page_number' => '<span class="screen-reader-text">' . __('page ', 'humescores' ) . '</span>',
+				'before_page_number' => '<span class="screen-reader-text">' . __('page ', 'amirpersonal' ) . '</span>',
 			));
 
 		?>
