@@ -73,11 +73,13 @@ function amirpersonal_setup() {
 	add_theme_support( 'custom-logo', array(
 		'width' => 90,
 		'height' => 90,
-		'flex-width' == true,
+		'flex-width' => true,
 	));
 
-	// Add theme support for selective refresh for widgets.
-	add_theme_support( 'customize-selective-refresh-widgets' );
+	/* Editor Styles */
+	add_editor_style ( array( 'inc/editor-styles.css', amirpersonal_fonts_url() ) );
+
+
 }
 endif;
 add_action( 'after_setup_theme', 'amirpersonal_setup' );
